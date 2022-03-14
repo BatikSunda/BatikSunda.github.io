@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --orange:#ff7a00;
+}
+
+*{
+  font-family: 'Nunito' , sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: #F76E11;
+    color: #fff;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.judul{
+  font-size: 5rem;
+  margin:3rem 0;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.paragraf{
+    padding: 3rem 5%;
+}
+.paragraf p{
+    text-align: justify;
+    font-size: 250%;
+}
+.paragraf .sumber{
+  display: flex;
+  flex-flow: column;
+}
+
+.paragraf .sumber a{
+  font-size: 20px;
+  background-color: #F76E11;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.paragraf .sumber a:hover{
+  text-decoration: none;
+  color: #F76E11;
+  background-color: #AAAAAA;
+}
+
+
+.judul span{
+  font-size: 5rem;
+  color: #F76E11;
+  border-radius: .5rem;
+  padding: .2rem 1rem;
+}
+
+.parallax {
+  height: 20vh;
+  width: 100%;
+  background-image: url('parallax2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: table;
+}
+
+.parallax h1{
+  font-size: 10rem;
+  color: #fff;
+  text-shadow: 3px 2px 1px #F76E11;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  
+}
+
+
+.heading{
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 1.7rem;
+  color:#444;
+  margin:2rem 0;
+  padding-top: 6rem;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--orange);
+  text-underline-offset:-1.4rem;
+}
+
+.heading span{
+    font-size: 5rem;
+    color: #D1D1D1;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  background:#fff;
+  z-index: 100;
+  padding:1rem 2rem;
+  box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+}
+
+.header .logo img{
+  height: 4rem;
+}
+
+.gambar img{
+  width: 700px;
+  height: 500px;
+}
+
+.gambar2 img{
+  width: 500px;
+  height: 300px;
+}
+
+.header nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin:0; padding:0;
+}
+
+.header nav ul li{
+  margin: 0 1.5rem;
+}
+
+.header nav ul li a{
+  font-size: 2rem;
+  color:#666;
+}
+
+.header nav ul li a:hover{
+  color:#F76E11;
+  text-decoration: none;
+}
+
+.header .fa-bars{
+  font-size: 2.5rem;
+  color:#666;
+  cursor: pointer;
+  display: none;
+}
+
+.home .hero{
+  min-height: 35vh;
+  background: url(batik2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.home .hero2{
+  min-height: 35vh;
+  background: url(mega.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.home .row{
+  margin:0;
+}
+
+.home .hero .text1{
+  font-size: 5rem;
+  width:45rem;
+  background:#fff;
+  padding:1rem;
+  text-align: center;
+  opacity: .8;
+}
+
+.home .hero2 .text1{
+  font-size: 10rem;
+  width:60rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  padding:3rem;
+  margin-left: 16rem;
+  text-align: center;
+  opacity: .8;
+}
+
+.home .hero .text2{
+  font-size: 3rem;
+  width:35rem;
+  background:var(--orange);
+  padding:1rem;
+  text-align: center;
+  opacity: .8;
+  margin-top: 1rem;
+  color:#fff;
+}
+
+.paragraf h1{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.project{
+ min-height: 80vh;
+ background-image: url('galeryb.jpg');
+ background-size: cover;
+ background-position: center;
+}
+
+.project .heading{
+  color:#000;
+}
+
+.project .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project .box-container .box{
+  height:20rem;
+  width:30rem;
+  border-radius: .5rem;
+  margin:3rem;
+  overflow: hidden;
+  box-shadow: 0 .3rem .5rem #000;
+}
+
+.project .box-container .box img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.project .box-container .box:hover img{
+  transform: scale(1.5);
+}
+
+/* footer */
+
+.footer{
+  background:#333;
+  text-align: center;
+}
+
+.footer .row{
+  width:100%;
+  margin-left: 0;
+  padding:1rem;
+}
+
+.footer .row .col-md-3{
+  margin:1rem 0;
+}
+
+.footer .row .col-md-3 img {
+  height: 3.5rem;
+}
+
+.footer h2{
+  font-size: 2.5rem;
+  color:#fff;
+}
+
+.footer p{
+  font-size: 1.2rem;
+  color:#ccc;
+}
+
+.footer .sumber{
+  display: flex;
+  flex-flow: column;
+}
+ .footer .sumber a{
+  color: #fff;
+  background-color: #F76E11;
+  font-size: 2.5rem;
+  padding: .5rem;
+  margin: 1rem;
+}
+
+.footer .list{
+  display: flex;
+  flex-flow: column;
+}
+
+ .footer .list a{
+  color:#ccc;
+  font-size: 1.7rem;
+  padding: .5rem;
+}
+
+.footer .list a:hover{
+  color: #ff7a00;
+}
+
+.footer .credit{
+  width: 100%;
+  text-align: center;
+  color:#fff;
+  font-size: 2rem;
+  padding:1rem 0;
+  margin:1rem 0;
+  margin-bottom: 0;
+  border-top: .1rem solid #aaa;
+  letter-spacing: .2rem;
+}
+
+.footer .credit span{
+  color:var(--orange);
+}
+
+.fa-times{
+  transform: rotate(180deg);
+}
+
+/* media queries  */
+
+@media (max-width:768px){
+
+  html{
+    font-size: 50%;
+  }
+  
+  .gambar img{
+    width: 500px;
+    height: 300px;
+  }
+  
+  .gambar2 img{
+  width: 300px;
+  height: 200px;
+}
+
+
+  .header .fa-bars{
+    display: block;
+  }
+
+  .header nav{
+    position: fixed;
+    top:6rem; right: -120%;
+    height:calc(100vh - 6rem);
+    width:100vw;
+    background: rgba(226,143,0,0.504);
+    z-index: 1000;
+    border-top: .1rem solid rgba(0,0,0,.3);
+  }
+
+  .header nav ul{
+    height: 100%;
+    width:33rem;
+    background:#fff;
+    flex-flow: column;
+    justify-content: center;
+    float: right;
+  }
+
+  .header nav ul li{
+    margin:1rem 0;
+  }
+
+  .header nav ul li a{
+    display: block;
+    padding:.5rem 0;
+    border: .1rem solid rgba(226,143,0,0.504);
+    width:25rem;
+    border-radius: 5rem;
+    text-align: center;
+  }
+
+  .header nav ul li a:hover{
+    background:#333;
+    color:#F76E11;
+  }
+
+  .header .nav-toggle{
+    right: 0%;
+  }
+  
+  .home .hero2 .text1{
+   font-size: 5rem;
+   width:30rem;
+   background: #fff;
+   border-radius: 1rem;
+   padding:1rem;
+   margin-left: 7rem;
+   margin-top: 4rem;
+   text-align: center;
+  }
+  
+  .parallax h1{
+    font-size: 5rem;
+  }
+  
+}
+  
+
+@media (max-width:400px){
+  .gambar img{
+    width: 300px;
+    height: 200px;
+  }
+  
+  .gambar2 img{
+  width: 200px;
+  height: 100px;
+}
+  
+  .home .hero .text1{
+    font-size: 2.5rem;
+    width: 33rem;
+  }
+  .home .hero .text2{
+    font-size: 1.5rem;
+    width: 30rem;
+  }
+}
